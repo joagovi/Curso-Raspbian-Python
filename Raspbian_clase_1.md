@@ -105,4 +105,60 @@ pip
 python3 -m pip
 ```
 
+## Instalando un servidor WEB, el broker MQTT y el Dashboard
+
+**Instalando Node-RED**
+
+- ***Instalando la última version de node.js***
+
+  ``` sudo apt-get install nodejs ```
+
+- ***Instalando npm***
+
+  ```sudo apt-get install npm ```
+
+- ***Instalando Node-RED con npm***
+ 
+  ```sudo npm install -g --unsafe-perm node-red```
+
+- ***Inicializando el servicio Node-RED***
+  
+  ```sudo node-red ```
+
+El servidor se inicia ejecutandose a traves del puerto 1880.
+Para entrar al dashboard ingrese la url *ip_servidor*:1880/ o localhost:1880/ en el navegador.
+
+**Instalando el broker Aedes y el Dashboard**
+
+  - ***Utilizando la interfaz gráfica (GUI) de Node Red:***
+
+  ![alt text](https://github.com/joagovi/Garbage-Classification-for-safety/blob/master/pictures/menu_node.png "menu node-red")
+
+1. Ingresar al menu principal de node-red.
+2. Seleccionar "Manage palette".
+3. Seleccionar "Install".
+4. Ingresar **"node-red-dashboard"** en el campo de busqueda.
+5. Click en el boton **"install"**.
+6. Cuando la instalación finalice, hacer click en "Done."
+7. Presione F5 para recargar.
+8. Encontrará el boton **"Dashboard"** a la derecha.
+
+- **De forma similar instalar el nodo del broker Aedes: “node-red-contrib-aedes”**
+
+**Inicializar Node-RED con un archivo pre-existente**
+
+  1. Usar la carpeta **.node-red**: ``` cd <PATH>/.node-red/ ```
+Donde .node-red es la carpeta que contiene los archivos de la aplicación.
+
+  2. Inicializar Node-RED con el archivo que contien el flujo de datos:```sudo node-red flows_ip-172-31-87-186.json```
+
+**Configurando los flujos de datos de node-red**
+
+- ***Inicializar el Broker***
+
+  Seleccionar cualquiera de los subscriptores y entonces editar el servidor con el ip de localhost. Reemplazar 52.90.89.156 por 127.0.0.1.
+
+  ![alt text](https://github.com/joagovi/Garbage-Classification-for-safety/blob/master/pictures/edit_broker.png "select broker")
+
+  ![alt text](https://github.com/joagovi/Garbage-Classification-for-safety/blob/master/pictures/edit_broker_2.png "edit broker")
 

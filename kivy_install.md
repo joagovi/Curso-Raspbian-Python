@@ -34,7 +34,7 @@ python3 -m pip install --upgrade --user Cython==0.29.19 pillow
 
 **Instalando el paquete kivy (master)**
 
-***Instalar wheel ***
+***Instalar wheel***
 
 ```
 python3 -m pip install --upgrade --user wheel

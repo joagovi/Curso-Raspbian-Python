@@ -43,8 +43,8 @@ python3 -m pip install --upgrade --user wheel
 ***Finalmente compilar e instalar Kivy (wheels) y opcionalmente los ejemplos (kivy-examples):***
 
 ```
-python -m pip install kivy
-python -m pip install kivy_examples
+python3 -m pip install kivy
+python3 -m pip install kivy_examples
 ```
 
 ***Moverse a la carpeta de instalación de los ejemplos y ejecutar el main.py***
